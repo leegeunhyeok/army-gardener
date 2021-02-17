@@ -23,7 +23,7 @@
 
 ## How it works?
 
-GitHub Actions의 스케줄링(crontab) 기능을 통해 매일 본 저장소의 `task.sh` 스크립트를 실행합니다.  
+[GitHub Actions](https://github.com/features/actions)의 스케줄링(crontab) 기능을 통해 매일 본 저장소의 `task.sh` 스크립트를 실행합니다.  
 스크립트는 현재 날짜(`yyyy-MM-dd`)값을 받아 `date.txt` 파일에 기록하며,  
 해당 변경 사항을 커밋하고 원격 저장소로 푸쉬함으로써 그 날의 잔디를 심습니다.  
 
@@ -32,6 +32,6 @@ GitHub Actions의 스케줄링(crontab) 기능을 통해 매일 본 저장소의
 ## Meter
 
 본인은 산업기능요원으로 재직 중이며, 훈련소 기간동안 커밋을 못할 생각을 하니 ~~잘 심어두었던 잔디가 걱정되었다~~.  
-이러한 이유로 빠르고 대충 만들게된 쉽고 간편하고 편리한 GitHub Actions!
+이러한 이유로 빠르고 대충 만들게된 쉽고 간편하고 편리한 GitHub Actions 템플릿 저장소!
 
 ~~그대로 방치하면 군 문제가 아니더라도 평생 자동으로 잔디를 심을 수 있다.~~
