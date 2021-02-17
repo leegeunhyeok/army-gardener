@@ -13,7 +13,7 @@
 ## Setup
 
 1. 상단의 `Use this template` 버튼 눌러 Fork
-2. `.github/workflows/planting-grass.yml` 파일 수정
+2. [.github/workflows/planting-grass.yml](.github/workflows/planting-grass.yml) 파일 수정
    - 파일 내에 표기해둔 `A`, `B` 작업 진행
 3. 수정사항 커밋 후 푸쉬!
 
