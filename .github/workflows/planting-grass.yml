@@ -20,7 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: fregante/setup-git-user@v1
       - name: Set current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
@@ -28,6 +27,9 @@ jobs:
         run: sh ./task.sh ${{ steps.date.outputs.date }}
       - name: Commit files
         run: |
+          # 이전의 커밋 기록에서 사용자 이름 및 이메일을 자동으로 추출합니다!
+          git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+          git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
           git add date.txt
           git commit -m ${{ steps.date.outputs.date }}
       - name: Push changes
